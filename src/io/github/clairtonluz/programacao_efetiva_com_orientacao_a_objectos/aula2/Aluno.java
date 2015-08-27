@@ -7,6 +7,23 @@ public class Aluno {
 	private String curso;
 	private double[] notas = new double[4];
 
+	public Aluno() {
+		super();
+	}
+
+	public Aluno(String nome, char sexo) {
+		super();
+		this.nome = nome;
+		this.sexo = sexo;
+	}
+
+	public Aluno(String nome, String matricula, char sexo) {
+		super();
+		this.nome = nome;
+		this.matricula = matricula;
+		this.sexo = sexo;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -51,6 +68,34 @@ public class Aluno {
 		System.out.println(this);
 	}
 
+	public void exibir(String titulo) {
+		switch (titulo) {
+		case "nome":
+			System.out.println(this.nome);
+			break;
+		case "matricula":
+			System.out.println(this.matricula);
+			break;
+		case "sexo":
+			System.out.println(this.sexo);
+			break;
+		case "curso":
+			System.out.println(this.curso);
+			break;
+		case "notas":
+			System.out.println(this.notas);
+			break;
+		default:
+			System.out.println("titulo não encontrado");
+			break;
+		}
+
+	}
+
+	public void atribuirNota(int numProva) {
+		this.atribuirNota(numProva, 0);
+	}
+
 	public void atribuirNota(int numProva, double nota) {
 		if (numProva > 0 && numProva <= 4) {
 			notas[numProva - 1] = nota;
@@ -65,6 +110,6 @@ public class Aluno {
 
 	@Override
 	public String toString() {
-		return nome + ", " + sexo + ", " + matricula + ", " + curso;
+		return nome + ", " + sexo + ", " + matricula + ", " + curso + ", " + notas[0] + ", " + notas[1] + ", " + notas[2] + ", " + notas[3];
 	}
 }
