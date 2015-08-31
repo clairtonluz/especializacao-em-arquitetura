@@ -1,4 +1,4 @@
-package io.github.clairtonluz.programacao_efetiva_com_orientacao_a_objectos.aula2;
+package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aula2;
 
 public class UsandoAluno {
 

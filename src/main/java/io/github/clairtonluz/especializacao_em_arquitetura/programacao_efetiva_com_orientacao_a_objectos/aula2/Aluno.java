@@ -1,4 +1,4 @@
-package io.github.clairtonluz.programacao_efetiva_com_orientacao_a_objectos.aula2;
+package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aula2;
 
 public class Aluno {
 	private String nome;
@@ -86,7 +86,7 @@ public class Aluno {
 			System.out.println(this.notas);
 			break;
 		default:
-			System.out.println("titulo não encontrado");
+			System.out.println("titulo nï¿½o encontrado");
 			break;
 		}
 
@@ -100,7 +100,7 @@ public class Aluno {
 		if (numProva > 0 && numProva <= 4) {
 			notas[numProva - 1] = nota;
 		} else {
-			System.out.println("número da prova deve ser entre 1 e 4");
+			System.out.println("nï¿½mero da prova deve ser entre 1 e 4");
 		}
 	}
 
