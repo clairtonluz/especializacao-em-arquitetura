@@ -13,30 +13,37 @@ public class Elevador {
 	}
 
 	public void irPara(int destino) {
+		System.out.println("indo para " + destino);
 		this.andarAtual = destino;
 	}
 
 	public void abrirPorta() {
+		System.out.println("abrindo porta");
 		portaAberta = true;
 	}
 
 	public void fecharPorta() {
+		System.out.println("fechando porta");
 		portaAberta = false;
 	}
 
 	public boolean estaCheio() {
+		System.out.println("cheio = " + (lotacao == capacidade));
 		return lotacao == capacidade;
 	}
 
 	public boolean estaVazio() {
+		System.out.println("cheio = " + (lotacao == 0));
 		return lotacao == 0;
 	}
 
 	public void entrarPessoa() {
+		System.out.println("entrando pessoa");
 		lotacao++;
 	}
 
 	public void sairPessoa() {
+		System.out.println("saindo pessoa");
 		lotacao--;
 	}
 
