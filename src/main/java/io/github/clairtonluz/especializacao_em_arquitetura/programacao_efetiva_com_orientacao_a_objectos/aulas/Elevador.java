@@ -13,8 +13,22 @@ public class Elevador {
 	}
 
 	public void irPara(int destino) {
-		System.out.println("indo para " + destino);
-		this.andarAtual = destino;
+		if (destino >= 0 && destino <= quantidadeAndares) {
+			System.out.println("indo para " + destino);
+			fecharPorta();
+			if (destino > andarAtual) {
+				for (; andarAtual < destino; andarAtual++) {
+					System.out.println("passando pelo andar " + andarAtual);
+				}
+			} else {
+				for (; andarAtual > destino; andarAtual--) {
+					System.out.println("passando pelo andar " + andarAtual);
+				}
+			}
+			System.out.println("chegando ao andar " + andarAtual);
+		} else {
+			System.err.println("destino inválido");
+		}
 	}
 
 	public void abrirPorta() {
