@@ -38,13 +38,21 @@ public class Elevador {
 	}
 
 	public void entrarPessoa() {
-		System.out.println("entrando pessoa");
-		lotacao++;
+		if (!estaCheio()) {
+			System.out.println("entrando pessoa");
+			lotacao++;
+		} else {
+			System.err.println("O elevador está lotado");
+		}
 	}
 
 	public void sairPessoa() {
-		System.out.println("saindo pessoa");
-		lotacao--;
+		if (!estaVazio()) {
+			System.out.println("saindo pessoa");
+			lotacao--;
+		} else {
+			System.err.println("O elevador está vazio");
+		}
 	}
 
 	// GETTERS AND SETTERS
