@@ -26,6 +26,7 @@ public class Elevador {
 				}
 			}
 			System.out.println("chegando ao andar " + andarAtual);
+			abrirPorta();
 		} else {
 			System.err.println("destino inválido");
 		}
