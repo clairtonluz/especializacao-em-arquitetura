@@ -3,7 +3,7 @@ package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_
 public class Cisne extends Cavaleiro {
 
 	public Cisne() {
-		super("Fulano", "Bronze", new PoDeDiamante(), new TrovaoAurora());
+		super("Ioga", "Bronze", new PoDeDiamante(), new TrovaoAurora());
 	}
 	
 	public void dispararPoDeDiamante(){
