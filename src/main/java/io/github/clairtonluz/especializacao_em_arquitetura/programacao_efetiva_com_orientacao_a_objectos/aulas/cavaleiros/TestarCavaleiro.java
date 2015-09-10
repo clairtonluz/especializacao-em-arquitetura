@@ -6,5 +6,9 @@ public class TestarCavaleiro {
 		Cisne cisne = new Cisne();
 		cisne.dispararPoDeDiamante();
 		cisne.dispararTrovaoAurora();
+		
+		Andromeda andromeda = new Andromeda();
+		andromeda.dispararCorrenteDeAndromeda();
+		andromeda.dispararNebulosaDeAndromeda();
 	}
 }
