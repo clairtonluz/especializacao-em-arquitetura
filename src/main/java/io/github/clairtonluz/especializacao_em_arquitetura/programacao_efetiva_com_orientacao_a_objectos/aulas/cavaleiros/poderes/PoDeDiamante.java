@@ -1,4 +1,4 @@
-package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aulas.cavaleiros;
+package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aulas.cavaleiros.poderes;
 
 public class PoDeDiamante implements Poder{
 
@@ -9,7 +9,7 @@ public class PoDeDiamante implements Poder{
 
 	@Override
 	public int getDano() {
-		return 20;
+		return 50;
 	}
 
 }

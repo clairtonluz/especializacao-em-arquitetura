@@ -1,5 +1,7 @@
 package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aulas.cavaleiros;
 
+import io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aulas.cavaleiros.poderes.Poder;
+
 public abstract class Cavaleiro {
 	private String nome;
 	private String tipo;
