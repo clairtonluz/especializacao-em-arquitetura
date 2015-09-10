@@ -43,12 +43,10 @@ public class Elevador {
 	}
 
 	public boolean estaCheio() {
-		System.out.println("cheio = " + (lotacao == capacidade));
 		return lotacao == capacidade;
 	}
 
 	public boolean estaVazio() {
-		System.out.println("cheio = " + (lotacao == 0));
 		return lotacao == 0;
 	}
 
