@@ -6,7 +6,7 @@ import io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_c
 public class Cisne extends Cavaleiro {
 
 	public Cisne() {
-		super("Ioga", "Bronze", new PoDeDiamante(), new TrovaoAurora());
+		super("Hyoga", "Bronze", new PoDeDiamante(), new TrovaoAurora());
 	}
 	
 	public void dispararPoDeDiamante(){
