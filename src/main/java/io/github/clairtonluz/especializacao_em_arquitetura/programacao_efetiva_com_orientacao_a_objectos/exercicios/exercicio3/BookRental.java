@@ -1,19 +1,19 @@
 package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.exercicios.exercicio3;
 
-import java.util.Date;
-
-public class BookRental {
-	private String bookTitle;
+public class BookRental extends Rental {
 	private String author;
-	private Date rentDate;
-	private Date dueDate;
-	private double rentalFee;
-	
-	public boolean isOverdue() {
-		Date now = new Date();
-		return dueDate.before(now);
+
+	@Override
+	public double getTaxa() {
+		return 1.2;
 	}
-	public double getTotalFee() {
-		return isOverdue() ? 1.2*rentalFee : rentalFee;
+
+	public String getAuthor() {
+		return author;
 	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
 }
