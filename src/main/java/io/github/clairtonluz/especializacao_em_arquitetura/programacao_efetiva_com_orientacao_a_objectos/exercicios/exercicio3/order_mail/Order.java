@@ -2,8 +2,6 @@ package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_
 
 public class Order {
 	boolean isSameString(String s1, String s2) {
-		if(s1==s2) return true;
-		if(s1==null) return false;
-		return(s1.equals(s2));
+		return StringUtil.isSameString(s1, s2);
 	}
 }
