@@ -14,7 +14,7 @@ public abstract class Robo {
 		System.out.println("parar...");
 	}
 	
-	public void executar() {
+	public final void executar() {
 		inicializar();
 		construir();
 		testar();
