@@ -1,0 +1,24 @@
+package io.github.clairtonluz.especializacao_em_arquitetura.programacao_efetiva_com_orientacao_a_objectos.aulas.robos;
+
+public abstract class Robo {
+
+	protected void inicializar() {
+		System.out.println("inicializar...");
+	}
+	
+	protected abstract void construir();
+	
+	protected abstract void testar();
+	
+	protected void parar() {
+		System.out.println("parar...");
+	}
+	
+	public void executar() {
+		inicializar();
+		construir();
+		testar();
+		parar();
+	}
+	
+}
