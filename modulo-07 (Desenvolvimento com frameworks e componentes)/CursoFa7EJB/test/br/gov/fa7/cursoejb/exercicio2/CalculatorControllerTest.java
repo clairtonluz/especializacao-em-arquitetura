@@ -21,7 +21,6 @@ public class CalculatorControllerTest {
 
 	@Test
 	public void testSoma() throws NamingException {
-
 		double result = calculatorController.performOperation(10, 10, '+');
 		assertEquals(20, result, 0d);
 	}
@@ -30,16 +29,12 @@ public class CalculatorControllerTest {
 	public void testSubtracao() throws NamingException {
 		double result = calculatorController.performOperation(10, 10, '-');
 		assertEquals(0, result, 0d);
-
 	}
 
 	@Test
 	public void testMultiplicacao() throws NamingException {
-
 		double result = calculatorController.performOperation(10, 10, '*');
 		assertEquals(100, result, 0d);
-		// result = calculatorController.performOperation(10, 10, '/');
-		// assertEquals(1, result, 0d);
 
 	}
 

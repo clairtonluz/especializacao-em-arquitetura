@@ -1,34 +1,38 @@
 package br.gov.fa7.cursoejb.exercicio2;
 
-import javax.ejb.Stateless;
+import java.util.HashMap;
+import java.util.Map;
 
-@Stateless(name="CalculatorController")
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.ejb.Singleton;
+
+import br.gov.fa7.cursoejb.exercicio3.Operador;
+
+@Singleton(name="CalculatorController")
 public class CalculatorControllerImpl implements CalculatorController {
+	
+	@EJB(beanName="Soma")
+	private Operador soma;
+	@EJB(beanName="Subtracao")
+	private Operador subtracao;
+	@EJB(beanName="Multiplicacao")
+	private Operador multiplicacao;
+	@EJB(beanName="Divisao")
+	private Operador divisao;
+	private Map<Character, Operador> map = new HashMap<Character, Operador>();
+	
+	@PostConstruct
+	public void init(){
+		map.put('+', soma);
+		map.put('-', subtracao);
+		map.put('*', multiplicacao);
+		map.put('/', divisao);
+	}
 
 	@Override
-	public double performOperation(double operand1, double operand2, char operation) {
-		double result;
-		switch (operation) {
-		case '+':
-			result = operand1 + operand2;
-			break;
-
-		case '-':
-			result = operand1 - operand2;
-			break;
-
-		case '*':
-			result = operand1 * operand2;
-			break;
-
-		case '/':
-			result = operand1 / operand2;
-			break;
-
-		default:
-			throw new IllegalArgumentException("Operador inválido");
-		}
-		return result;
+	public double performOperation(double op1, double op2, char operation) {
+		return ((Operador) map.get(operation)).perform(op1, op2);
 	}
 
 }
