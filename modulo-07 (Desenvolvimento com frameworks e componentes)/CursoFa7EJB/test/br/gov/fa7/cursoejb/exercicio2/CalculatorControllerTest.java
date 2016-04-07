@@ -40,8 +40,8 @@ public class CalculatorControllerTest {
 
 	@Test
 	public void testDivisao() throws NamingException {
-		 double result = calculatorController.performOperation(10, 10, '/');
-		 assertEquals(1, result, 0d);
+		double result = calculatorController.performOperation(10, 10, '/');
+		assertEquals(1, result, 0d);
 
 	}
 

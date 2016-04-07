@@ -5,11 +5,11 @@ import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.ejb.Singleton;
+import javax.ejb.Stateless;
 
 import br.gov.fa7.cursoejb.exercicio3.Operador;
 
-@Singleton(name="CalculatorController")
+@Stateless(name="CalculatorController")
 public class CalculatorControllerImpl implements CalculatorController {
 	
 	@EJB(beanName="Soma")
