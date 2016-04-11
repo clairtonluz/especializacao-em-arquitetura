@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.gov.fa7.cursoejb.exercicio1.JNDIUtils;
+import br.gov.fa7.cursoejb.exercicio4.InvalidOperationException;
 
 public class CalculatorControllerTest {
 
@@ -43,6 +44,17 @@ public class CalculatorControllerTest {
 		double result = calculatorController.performOperation(10, 10, '/');
 		assertEquals(1, result, 0d);
 
+	}
+	
+	@Test(expected=ArithmeticException.class)
+	public void testDivisaoPorZero() throws NamingException {
+		double result = calculatorController.performOperation(10, 0, '/');
+	}
+	
+
+	@Test(expected=InvalidOperationException.class)
+	public void testOperacaoInvalida() throws NamingException {
+		double result = calculatorController.performOperation(10, 0, '&');
 	}
 
 }

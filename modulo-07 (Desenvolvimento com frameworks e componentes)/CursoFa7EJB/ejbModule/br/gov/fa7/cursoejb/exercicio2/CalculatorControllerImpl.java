@@ -8,6 +8,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import br.gov.fa7.cursoejb.exercicio3.Operador;
+import br.gov.fa7.cursoejb.exercicio4.InvalidOperationException;
 
 @Stateless(name="CalculatorController")
 public class CalculatorControllerImpl implements CalculatorController {
@@ -32,6 +33,7 @@ public class CalculatorControllerImpl implements CalculatorController {
 
 	@Override
 	public double performOperation(double op1, double op2, char operation) {
+		if(map.get(operation) == null) throw new InvalidOperationException("Operação inválida");
 		return ((Operador) map.get(operation)).perform(op1, op2);
 	}
 

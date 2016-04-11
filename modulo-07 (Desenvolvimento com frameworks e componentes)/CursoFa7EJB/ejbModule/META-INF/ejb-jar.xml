@@ -13,5 +13,9 @@
 			<ejb-name>*</ejb-name>
 			<interceptor-class>br.gov.fa7.cursoejb.interceptor.LogInterceptor</interceptor-class>
 		</interceptor-binding>
+		<application-exception>
+			<exception-class>java.lang.ArithmeticException</exception-class>
+			<rollback>true</rollback>
+		</application-exception>
 	</assembly-descriptor>
 </ejb-jar>
