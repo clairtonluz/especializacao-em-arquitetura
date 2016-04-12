@@ -13,18 +13,19 @@ public class LogInterceptor {
 
 	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss:SS");
 	private static final String IN = "[%s][ENTRADA] %s(%s) \n";
-	private static final String OUT = "[%s][SAIDA] %s \n";
+	private static final String OUT = "[%s][DURATION = %s][SAIDA] %s \n";
 
 	@AroundInvoke
 	public Object logar(InvocationContext ctx) throws Exception {
+		Long begin = System.currentTimeMillis();
 		String mensagem = String.format(IN, LocalDateTime.now().format(formatter), ctx.getMethod().getName(), Arrays.asList(ctx.getParameters()));
 		Logger.getLogger(ctx.getTarget().getClass().getName()).log(Level.INFO, mensagem);
 		
 		Object proceed = ctx.proceed();
 		
-		mensagem = String.format(OUT, LocalDateTime.now().format(formatter), ctx.getMethod().getName());
+		Long duration = System.currentTimeMillis() - begin;
+		mensagem = String.format(OUT, LocalDateTime.now().format(formatter), duration.toString(), ctx.getMethod().getName());
 		
-
 		Logger.getLogger(ctx.getTarget().getClass().getName()).log(Level.INFO, mensagem);
 		
 		return proceed;

@@ -45,16 +45,15 @@ public class CalculatorControllerTest {
 		assertEquals(1, result, 0d);
 
 	}
-	
-	@Test(expected=ArithmeticException.class)
-	public void testDivisaoPorZero() throws NamingException {
-		double result = calculatorController.performOperation(10, 0, '/');
-	}
-	
 
-	@Test(expected=InvalidOperationException.class)
+	@Test(expected = ArithmeticException.class)
+	public void testDivisaoPorZero() throws NamingException {
+		calculatorController.performOperation(10, 0, '/');
+	}
+
+	@Test(expected = InvalidOperationException.class)
 	public void testOperacaoInvalida() throws NamingException {
-		double result = calculatorController.performOperation(10, 0, '&');
+		calculatorController.performOperation(10, 0, '&');
 	}
 
 }
