@@ -1,5 +1,6 @@
 package br.gov.fa7.cursoejb.exercicio6.async;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -13,7 +14,10 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="employee")
-public class Employee {
+public class Employee implements Serializable {
+	
+	private static final long serialVersionUID = -738495467052689295L;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	Long id;

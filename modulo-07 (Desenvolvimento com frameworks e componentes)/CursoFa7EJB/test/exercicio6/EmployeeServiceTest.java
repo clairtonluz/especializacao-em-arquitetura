@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
 
+import javax.jms.JMSException;
 import javax.naming.NamingException;
 
 import org.junit.Before;
@@ -28,8 +29,18 @@ public class EmployeeServiceTest {
 
 	@Test
 	public void testCarregarXml() throws ParseException, IOException {
-		List<Map<String, Object>> list = (List<Map<String, Object>>) new XStream().fromXML(new File("employee.xml"));
+		List<Map<String, Object>> list = readFile();
 		employeeService.importItems(list);
+	}
+
+	@Test
+	public void testCarregarXmlJMS() throws ParseException, IOException, JMSException {
+		List<Map<String, Object>> list = readFile();
+		employeeService.queueImportItems(list);
+	}
+
+	private List<Map<String, Object>> readFile() {
+		return (List<Map<String, Object>>) new XStream().fromXML(new File("employee.xml"));
 	}
 
 }
