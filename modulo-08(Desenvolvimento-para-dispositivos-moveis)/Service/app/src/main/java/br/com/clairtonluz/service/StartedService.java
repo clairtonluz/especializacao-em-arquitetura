@@ -24,6 +24,7 @@ public class StartedService extends Service {
                         e.printStackTrace();
                     }
                 }
+                stopSelf();
             }
         }).start();
         return Service.START_NOT_STICKY;

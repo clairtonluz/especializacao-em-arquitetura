@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void boundService(View view) {
-
+        Intent it = new Intent(this, BoundServiceActivity.class);
+        startActivity(it);
     }
 }

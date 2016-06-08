@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.clairtonluz.service">
+    package="br.com.clairtonluz.layoutexample">
 
     <application
         android:allowBackup="true"
@@ -15,11 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartedServiceActivity" />
-        <activity android:name=".BoundServiceActivity"></activity>
-
-        <service android:name=".StartedService" />
-
     </application>
 
 </manifest>
