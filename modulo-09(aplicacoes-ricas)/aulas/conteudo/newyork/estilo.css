@@ -1,0 +1,42 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    background: url(topo_ny.jpg) no-repeat #300C00;
+    background-position: center;
+    background-color: #003467;
+    height: 100px;
+}
+
+section {
+    margin: 1% 0%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.imgsmall {
+    width: 25%;
+    float: left;
+    padding: 1%;
+}
+
+
+@media screen and (max-width: 650px) {
+    .imgsmall {
+        width: 50%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .imgsmall {
+        width: 100%;
+        padding: 1%;
+    }
+}
