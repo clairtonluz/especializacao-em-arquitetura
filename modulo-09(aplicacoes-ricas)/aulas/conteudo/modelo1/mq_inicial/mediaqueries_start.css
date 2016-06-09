@@ -1,0 +1,40 @@
+#masthead {
+    font-size: 36pt;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #9999FF
+}
+
+#footer {
+    border: 2px gray solid;
+    padding: 5pt;
+    margin-top: 5pt;
+}
+
+@media screen and (min-width: 600px) {
+
+    #container {
+        font-size: 16pt;
+        position: relative;
+        width: 100%;
+    }
+
+    #left_col {
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+
+    #page_content {
+        margin-left: 210px;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+    ul {
+        padding-left: 0px;
+    }
+    li {
+        display: inline;
+    }
+}

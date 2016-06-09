@@ -1,0 +1,152 @@
+/* Desktop, fixo CSS */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #594846;
+    font-family: sans-serif, "Times New Roman", serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a, a:visiteed {
+    color: #f9f3e9;
+}
+
+p {
+    margin: 0.5em 0.25em;
+}
+
+h1 {
+    font-size: 1em;
+    border: solid #594846;
+    border-width: 2px 0;
+    padding: 0.25em;
+    font-variant: small-caps;
+}
+
+h2 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+dl {
+    margin: 0 0.5em;
+}
+
+dt {
+    font-weight: bold;
+    margin: 0.5em 1em 0.5em 0;
+    border-bottom: 1px dashed #7b96bc;
+}
+
+.intro {
+    line-height: 1.3em;
+    text-align: justify;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #D5982C;
+    border-bottom: 2px solid #594846;
+}
+
+nav li a {
+    color: #f9f3e9;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+header p {
+    margin-left: -1000px;
+}
+
+#destaques ul {
+    list-style-image: url('images/point.png');
+    margin: 0.5em 0 1em 0.5em;
+    padding-left: 1em;
+}
+
+#destaques ul li {
+    margin: 0.5em 1em;
+}
+
+footer {
+    background-color: #D5982C;
+    color: #f9f3e9;
+    text-align: center;
+    padding: .5em 0;
+    font-style: italic;
+}
+
+/* Estrutura */
+body, header, nav, footer {
+    max-width: 960px;
+    width: 100%;
+}
+
+nav {
+    min-height: 25px;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline;
+    padding: 0.25em 0;
+    float: left;
+    width: 33.3333%; /* 960/3 */
+}
+
+header {
+    background: url(images/topo.jpg) no-repeat #300C00;
+    height: 200px;
+}
+
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    .intro {
+        font-size: 1.15em;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    header, nav, footer {
+        clear: both;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #principal {
+        margin: 10px 260px 0px 250px;
+    }
+
+    #visite {
+        float: left;
+        width: 240px;
+    }
+
+    #destaques {
+        float: right;
+        width: 240px;
+    }
+
+    .coluna {
+        margin: 10px 10px 0 0;
+    }
+}
