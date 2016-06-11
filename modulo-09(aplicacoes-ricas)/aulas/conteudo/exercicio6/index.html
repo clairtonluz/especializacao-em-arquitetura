@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="layout.css" / >
+
+  </head>
+  <body>
+    <div class="homepage-wrapper">
+	  <p><img src="imagens/logo.gif" /></p>
+      <h1>Bem-vindo ao jQuery Festas</h1>
+      <p>Tudo para uma festa por apenas <span>R$299.99</span></p>
+    </div>
+<div id="filtros">
+  <button class="filtro-promo">Promocao do Dia</button>
+  <button class="filtro-sem-alcool">Sem Alcool</button>
+</div>
+    <nav id="drinks">
+      <h2>Drinks Especiais desta Semana</h2>
+      <ul id="bebidas">
+      <li class="bebida promocao" data-preco="15.00">
+        <p>
+          <img src="imagens/yellow.gif" />
+        </p>
+        <h3>Lemon Breeze</h3>
+        <p>
+        Um drinks mais que saudavel, este drink combina
+        ervas botanicas, minerais, e vitaminas com uma
+        suave mistura de limao que manter sua saude imune
+        dia e noite.<br/>
+        </p>
+        <button>Consultar Preco</button>
+      </li>
+	  <li class="bebida promocao sem-alcool" data-preco="20.00">
+		  <p>
+			<img src="imagens/chai.gif" />
+		  </p>
+		  <h3>Chá Chiller</h3>
+		  <p>
+			Nao pense que isto È um ch· tradicional,
+			este drinks mistura mate com chas especiais e adiciona
+			uma dose de chocolate para uma sensacao cafeinada.<br/>
+		  </p>
+		  <button>Consultar Preco</button>
+	  </li>
+	  <li class="bebida sem-alcool" data-preco="17.00">
+		  <p>
+			<img src="imagens/black.gif" />
+		  </p>
+		  <h3>Drink Negro</h3>
+		  <p>
+			Quer incrementar sua memÛria? Experimente nosso
+			Drink negro feito de ch· preto e leve toque
+			de cafÈ expresso. Seu cÈrebro agradecer.<br/>
+		  </p>
+		  <button>Consultar Preco</button>
+	  </li>
+	  </ul>
+      <p class="solto">
+	    Venha se divertir conosco com estes <em>a qualquer hora</em>
+		e todos os nossos outros maravilhosos drinks.
+        <a href="bebidas/bebidas.html">drinks</a>.
+      </p>
+    </nav>
+	<script src="jquery.min.js"></script>
+    <script src="application.js"></script>
+
+  </body>
+</html>
