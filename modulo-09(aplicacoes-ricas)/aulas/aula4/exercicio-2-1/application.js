@@ -15,6 +15,7 @@ var receita = {
         receita.slideToggle();
     },
     exibirImagem: function (event) {
+        event.preventDefault();
         $(this).closest('.bebida').find("img").show();
     }
 };
