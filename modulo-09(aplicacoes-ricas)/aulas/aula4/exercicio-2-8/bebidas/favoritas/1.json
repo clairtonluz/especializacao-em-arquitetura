@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Lemon Breeze",
+    "imagem": "imagens/yellow.gif"
+  },
+  {
+    "nome": "Dark Juice",
+    "imagem": "imagens/black.gif"
+  },
+  {
+    "nome": "Chai Tea",
+    "imagem": "imagens/chai.gif"
+  }
+]

@@ -1,5 +1,9 @@
 body {
   font:                small/1.6em Verdana, Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: center;
 }
 
 h1, h2 {
@@ -32,7 +36,7 @@ h2 {
 
 #drinks {
   border:              thin solid #007e7e;
-  width:               28%;
+  width:               80%;
 
   padding:             0px 20px 20px 20px;
 
@@ -40,6 +44,9 @@ h2 {
 
   text-align:          center;
   
+  background-image:    url("images/cocktail.gif");
+  background-repeat:   repeat-x;
+  line-height:         1;
 }
 
 #drinks h2 {
@@ -47,16 +54,51 @@ h2 {
 }
 
 #drinks h3 {
-  color:               #d12c47;
+  color:               #00B200;
+}
+
+.bebidas {
+   display: block;
+   margin-bottom: 10px;
 }
 
 
-
-#bebidas li {
-	display: inline;
-	width: 245px;
-	margin-right: 45px;
+.bebidas > li {
+    background: #00ff9d;
+	display: block;
+	width: 45%;
 	float: left;
+    margin-top: 30px;
+    margin-right: 20px;
+    border: 1px solid #00B200;
+    height: 350px;
+}
+
+.bebidas button {
+    text-transform: uppercase;
+    background: #00B200;
+    border: 1px solid #00B200;
+    color: #00ff9d;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 40px;
+
+
+}
+
+.carregando {
+    background: #00B200 url(imagens/bebida.gif) right no-repeat !important;
+}
+
+.comentarios {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.comentarios li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 #rodape {
@@ -67,22 +109,8 @@ h2 {
 }
 
 .solto {
-	margin-top: 100px;
+	margin-top: 400px;
 	clear: both;
-}
-
-#filtros {
-	margin-bottom: 10px;
-}
-
-#filtros button {
-	background: #333333;
-	color: #CCCCCC;
-	border: 0px;
-	padding: 10px;
-	font-size: 1.125em;
-	font-weight: bold;
-	
 }
 
 .destacada {
@@ -90,10 +118,15 @@ h2 {
 	padding: 5px;
 	border: dotted #CCCCCC 1px;
 }
-.receita {
-	padding: 0px;
-	margin-top: 10px;
+
+.comentarios {
+    display:none;
 }
-.receita li{
-	padding: 0px;
+
+.receita {
+    display: none;
+}
+
+.receita img {
+    display: none;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="layout.css"/>
+
+</head>
+<body>
+<div class="homepage-wrapper">
+    <p><img src="imagens/logo.gif"/></p>
+
+    <h1>Bem-vindo ao jQuery Festas</h1>
+</div>
+<nav id="drinks">
+    <h2>Faça o pedido do seu drink</h2>
+    <form action="pedidos.html">
+        Sabor: <select name="sabor" id="sabor">
+            <option>Limao</option>
+            <option>Negro</option>
+        </select>
+        <br/>
+        Quantidade: <input type="text" id="quantidade" name="quantidade" value="1" size="3" /> <br/>
+        <input type="submit" value="FAZER O PEDIDO" />
+    </form>
+    <div id="pedido">
+    </div>
+
+</nav>
+<script src="jquery.min.js"></script>
+<script src="application.js"></script>
+
+</body>
+</html>

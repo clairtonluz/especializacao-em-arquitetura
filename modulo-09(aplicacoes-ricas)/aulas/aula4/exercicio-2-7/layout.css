@@ -1,0 +1,145 @@
+body {
+  font: small/1.6em Verdana, Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #007e7e;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+#garantia {
+  line-height: 1.9em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444444;
+  border: 1px dashed white;
+  background-color: #a7cece;
+  padding: 25px;
+  padding-left: 80px;
+  margin: 30px;
+  margin-right: 250px;
+  background-image: url(imagens/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#drinks {
+  width: 80%;
+
+  padding: 0px 20px 20px 20px;
+
+  margin-left: 10px;
+
+  text-align: left;
+
+  background: #00ff9d;
+
+  border: 1px solid #00B200;
+  line-height: 1;
+  font-size: 1.5em;
+}
+
+#drinks h2 {
+  color: black;
+}
+
+h3 {
+  color: #000;
+  border: 1px solid #000000;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: #00ff9d;
+}
+
+.bebidas {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bebidas > li {
+  background: #00ff9d;
+  display: block;
+  width: 30%;
+  float: left;
+  margin-top: 30px;
+  margin-right: 20px;
+  border: 1px solid #00B200;
+  height: 200px;
+}
+
+.bebidas > li p, .bebidas > li img {
+  #display: none;
+}
+
+button {
+  text-transform: uppercase;
+  background: #00B200;
+  border: 1px solid #00B200;
+  color: #00ff9d;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 40px;
+
+}
+
+.carregando {
+  background: #00B200 url(imagens/bebida.gif) right no-repeat !important;
+}
+
+.comentarios {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.comentarios li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#rodape {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.solto {
+  margin-top: 400px;
+  clear: both;
+}
+
+.destaque {
+  margin-top: 20px;
+  background-color: #00ff9d;
+  padding: 5px;
+  border: dotted #CCCCCC 1px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comentarios {
+  display: none;
+}
+
+.receita {
+  display: none;
+}
+
+.receita img {
+  display: none;
+}
