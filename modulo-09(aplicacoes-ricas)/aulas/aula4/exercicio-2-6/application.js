@@ -11,7 +11,6 @@ $(document).ready(function () {
                     + ", Sanduiche: " + response.sanduiche
                     + ", Quantidade: " + response.quantidade
                     + ", Total: " + response.total;
-                // var result = JSON.stringify(response).replaceAll('{', '');
                 $('#pedido').hide().html(result).fadeIn();
             },
             contentType: 'application/json'
