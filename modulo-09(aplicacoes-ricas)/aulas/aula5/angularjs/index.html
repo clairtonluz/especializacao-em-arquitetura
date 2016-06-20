@@ -22,8 +22,26 @@
         </div>
         <div ng-show="aba.isSet(2)">
             <h4>Comentários</h4>
-            <blockquote></blockquote>
+            <blockquote ng-repeat="comentario in livro.comentarios">
+                {{comentario.autor}} disse: {{comentario.texto}}
+            </blockquote>
+            <form name=“comentarioForm”
+                  ng-controller="ComentarioControle as cmtControle"
+                  ng-submit="cmtControle.addComentario(livro)">
+                <blockquote>
+                    {{cmtControle.comentario.autor}} disse: {{cmtControle.comentario.texto}}
+                </blockquote>
+                <p>
+                    <input type="text" ng-model="cmtControle.comentario.autor"
+                           placeholder="Seu nome"/>
+                </p>
+                <p><textarea ng-model="cmtControle.comentario.texto"
+                             placeholder="Deixe seu comentario"></textarea>
+                </p>
+                <input type="submit" value="Adicionar"/>
+            </form>
         </div>
+
     </section>
     <button ng-show="{{livro.quantidade > 0}}">
         Adicionar ao Carrinho
