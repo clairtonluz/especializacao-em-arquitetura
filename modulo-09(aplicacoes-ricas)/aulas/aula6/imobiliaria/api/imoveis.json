@@ -1,0 +1,16 @@
+[{
+  "id": 1,
+  "titulo": "Imovel 1",
+  "descricao": "Descricao 1"
+},
+  {
+    "id": 2,
+    "titulo": "Imovel 2",
+    "descricao": "Descricao 2"
+  },
+  {
+    "id": 3,
+    "titulo": "Imovel 3",
+    "descricao": "Descricao 3"
+  }
+]
